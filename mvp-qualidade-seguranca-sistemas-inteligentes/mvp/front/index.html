@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Diabetes System</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Bem-Vindo ao AI Covid System</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para auxiliar no diagnóstico de Covid.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do paciente e clicar em "Diagnosticar".</p>
+        </div>
+        <!-- <div class="banner">
+            <img src="img/home.jpeg">
+        </div> -->
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newEntubado" placeholder="Entubado">
+        <input type="text" id="newPneumonia" placeholder="Pneumonia">
+        <input type="text" id="newHipertenso" placeholder="Hipertenso">
+        <input type="text" id="newDiabetes" placeholder="Diabetes">
+        <input type="text" id="newAsma" placeholder="Asma">
+        <input type="text" id="newObesidade" placeholder="Obesidade">
+        <input type="text" id="newTabaco" placeholder="Tabaco">
+        <input type="text" id="newIdade" placeholder="Idade">
+        <span onclick="newItem()" class="addBtn">Diagnosticar</span>
+    </section>
+    
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Entubado</th>
+                <th>Pneumonia</th>
+                <th>Hipertenso</th>
+                <th>Diabetes</th>
+                <th>Asma</th>
+                <th>Obesidade</th>
+                <th>Tabaco</th>
+                <th>Idade</th>
+                <th>Diagnostic</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+                <!-- <th><img src="img/edit.png" width="15" height="15"></th> -->
+            </tr>
+        </table>
+    </section>
+
+    
+</body>
+
+</html>
+
+

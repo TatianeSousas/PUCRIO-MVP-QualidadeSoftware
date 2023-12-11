@@ -1,0 +1,82 @@
+[2023-12-11 19:15:00,537] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 19:15:00,548] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 19:15:00] "[33mGET /pacientes?nome=Tatiane HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 19:15:04,682] ERROR log_exception() L825  Exception on /paciente [POST] - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py", line 93, in predict
+    outcome=Model.preditor(modelo, form))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\model\modelo.py", line 29, in preditor
+    diagnosis = model.predict(X_input.reshape(1, -1))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\neighbors\_classification.py", line 234, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\neighbors\_base.py", line 806, in kneighbors
+    X = self._validate_data(X, accept_sparse="csr", reset=False, order="C")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\base.py", line 588, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\base.py", line 389, in _check_n_features
+    raise ValueError(
+ValueError: X has 8 features, but KNeighborsClassifier is expecting 6 features as input.
+[2023-12-11 19:15:04,697] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 19:15:04] "[35m[1mPOST /paciente HTTP/1.1[0m" 500 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 19:21:27,321] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 19:21:27,330] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 19:21:27] "[33mGET /pacientes?nome=Tatiane HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 19:21:29,084] ERROR log_exception() L825  Exception on /paciente [POST] - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py", line 93, in predict
+    outcome=Model.preditor(modelo, form))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\model\modelo.py", line 29, in preditor
+    diagnosis = model.predict(X_input.reshape(1, -1))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\neighbors\_classification.py", line 234, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\neighbors\_base.py", line 806, in kneighbors
+    X = self._validate_data(X, accept_sparse="csr", reset=False, order="C")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\base.py", line 588, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\base.py", line 389, in _check_n_features
+    raise ValueError(
+ValueError: X has 8 features, but KNeighborsClassifier is expecting 6 features as input.
+[2023-12-11 19:21:29,100] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 19:21:29] "[35m[1mPOST /paciente HTTP/1.1[0m" 500 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 19:27:36,908] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 19:27:36] "OPTIONS /paciente?name=Tatiane HTTP/1.1" 200 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 19:27:36,925] WARNING delete_paciente() L179  Erro ao deletar paciente 'Tatiane', Paciente não encontrado na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L179 

@@ -1,0 +1,70 @@
+[2023-12-11 17:47:42,017] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 17:47:42] "[33mGET /pacientes?nome=luisa HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:47:43,367] ERROR log_exception() L825  Exception on /paciente [POST] - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py", line 81, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\model\modelo.py", line 11, in carrega_modelo
+    model = pickle.load(open(path, 'rb'))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'ManhattanDistance' on <module 'sklearn.metrics._dist_metrics' from 'C:\\Users\\ls960\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\sklearn\\metrics\\_dist_metrics.cp311-win_amd64.pyd'>
+[2023-12-11 17:47:43,380] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 17:47:43] "[35m[1mPOST /paciente HTTP/1.1[0m" 500 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:48:25,458] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 17:48:25] "OPTIONS /paciente?name=luisa HTTP/1.1" 200 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:48:25,470] WARNING delete_paciente() L179  Erro ao deletar paciente 'luisa', Paciente não encontrado na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L179 
+[2023-12-11 17:48:25,471] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 17:48:25] "[33mDELETE /paciente?name=luisa HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:50:51,360] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:50:51,368] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:51:18,942] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 17:51:18,943] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 17:51:18] "[33mGET /pacientes?nome=Luisa HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 17:51:22,830] ERROR log_exception() L825  Exception on /paciente [POST] - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py", line 81, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\model\modelo.py", line 11, in carrega_modelo
+    model = pickle.load(open(path, 'rb'))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'ManhattanDistance' on <module 'sklearn.metrics._dist_metrics' from 'C:\\Users\\ls960\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\sklearn\\metrics\\_dist_metrics.cp311-win_amd64.pyd'>
+[2023-12-11 17:51:22,836] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 17:51:22] "[35m[1mPOST /paciente HTTP/1.1[0m" 500 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 18:42:19,721] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 18:42:19,721] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 18:42:32,174] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 18:42:32,177] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 18:42:32] "[33mGET /pacientes HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  

@@ -1,0 +1,64 @@
+[2023-12-11 14:35:55,527] ERROR log_exception() L825  Exception on /paciente [POST] - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py", line 81, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\model\modelo.py", line 12, in carrega_modelo
+    else:
+          
+AttributeError: Can't get attribute 'ManhattanDistance' on <module 'sklearn.metrics._dist_metrics' from 'C:\\Users\\ls960\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\sklearn\\metrics\\_dist_metrics.cp311-win_amd64.pyd'>
+[2023-12-11 14:35:55,554] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 14:35:55] "[35m[1mPOST /paciente HTTP/1.1[0m" 500 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 14:36:00,550] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 14:36:00,556] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 14:36:00] "[33mGET /pacientes?nome= HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 14:36:12,391] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 14:36:12,392] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 14:36:12] "[33mGET /pacientes?nome=Sbarra HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 14:36:13,827] ERROR log_exception() L825  Exception on /paciente [POST] - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py", line 81, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\model\modelo.py", line 12, in carrega_modelo
+    else:
+          
+AttributeError: Can't get attribute 'ManhattanDistance' on <module 'sklearn.metrics._dist_metrics' from 'C:\\Users\\ls960\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\sklearn\\metrics\\_dist_metrics.cp311-win_amd64.pyd'>
+[2023-12-11 14:36:13,843] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 14:36:13] "[35m[1mPOST /paciente HTTP/1.1[0m" 500 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 14:47:07,475] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 14:47:07,478] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 14:47:07] "[33mGET /pacientes?nome= HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 14:47:22,513] WARNING get_pacientes() L50   Não há pacientes cadastrados na base :/ - call_trace=C:\PUC\engenharia-de-software-main\mvp-qualidade-seguranca-sistemas-inteligentes\mvp\api\app.py L50  
+[2023-12-11 14:47:22,515] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 14:47:22] "[33mGET /pacientes?nome=Fabiane HTTP/1.1[0m" 404 - - call_trace=C:\Users\ls960\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\_internal.py L96  
